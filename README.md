@@ -1,3 +1,5 @@
+# Voice Appointment Agent
+ 
 ## Features
 
 - Handles incoming appointment requests via Vapi voice calls
@@ -17,14 +19,14 @@
 ### 2. Environment Variables
 
 Create a `.env` file in your project root:
-
+```
 GOOGLE_APP_MAIL=your-email@gmail.com
 GOOGLE_APP_KEY="your-app-password-with-spaces"
 GOOGLE_SHEET_ID=your-google-sheet-id
-
+```
 ### 3. Install Dependencies
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ### 4. Google Sheet Setup
 
@@ -32,13 +34,13 @@ pip install -r requirements.txt
 
 ### 5. Run the App
 
-uvicorn main:app --host 0.0.0.0 --port 8000
+`uvicorn main:app --host 0.0.0.0 --port 8000`
 
 ### 6. Expose Your API
 
 Use [ngrok](https://ngrok.com/) or similar to get a public URL for Vapi integration:
 
-ngrok http 8000
+`ngrok http 8000`
 
 ### 7. Configure Vapi
 
